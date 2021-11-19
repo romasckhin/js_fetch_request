@@ -1,7 +1,7 @@
 function requestPatch() {
 
     const _idPatch = '61195418fb9c65003cb57d2f'
-    fetch('http://nazarov-kanban-server.herokuapp.com/card/' + _idPatch, {
+    fetch('d/' + _idPatch, {
         method: "PATCH",
         headers: {'Content-type': 'application/json;charset=utf-8'},
         completed: true,
@@ -22,7 +22,7 @@ function requestPatch() {
 
 function requestGet() {
 
-    fetch('http://nazarov-kanban-server.herokuapp.com/card')
+    fetch('hp.com/card')
         .then(res => {
             return res.json()
         })
@@ -34,7 +34,7 @@ function requestGet() {
 function requestDelete() {
 
     const _idDelete = ''
-    fetch('http://nazarov-kanban-server.herokuapp.com/card/' + _idDelete, {
+    fetch('hcard/' + _idDelete, {
         method: 'DELETE'
     })
         .then(res => {
@@ -47,7 +47,7 @@ function requestDelete() {
 
 function requestPost() {
 
-    fetch('http://nazarov-kanban-server.herokuapp.com/card', {
+    fetch('http:\card', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json;charset=utf-8'
